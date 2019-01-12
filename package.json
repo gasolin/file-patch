@@ -1,7 +1,7 @@
 {
-  "name": "file-diff",
+  "name": "file-patch",
   "version": "0.1.0",
-  "description": "command line diff tool for https://github.com/google/diff-match-patch",
+  "description": "command line diff / patch tool for https://github.com/google/diff-match-patch",
   "bin": {
     "file-diff": "./bin/file-diff.js",
     "file-patch": "./bin/file-patch.js"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gasolin/file-diff.git"
+    "url": "git+https://github.com/gasolin/file-patch.git"
   },
   "keywords": [
     "diff-match-patch",
@@ -22,9 +22,9 @@
   "author": "Fred Lin <gasolin+npm@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gasolin/file-diff/issues"
+    "url": "https://github.com/gasolin/file-patch/issues"
   },
-  "homepage": "https://github.com/gasolin/file-diff#readme",
+  "homepage": "https://github.com/gasolin/file-patch#readme",
   "dependencies": {
     "diff-match-patch": "^1.0.4"
   }

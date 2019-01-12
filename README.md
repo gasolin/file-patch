@@ -2,7 +2,7 @@
 
 Command line diff / patch tool for https://github.com/google/diff-match-patch
 
-[![npm version](https://img.shields.io/npm/v/file-diff.svg)](https://www.npmjs.com/package/file-diff)
+[![npm version](https://img.shields.io/npm/v/file-patch.svg)](https://www.npmjs.com/package/file-patch)
 
 ## Install via
 

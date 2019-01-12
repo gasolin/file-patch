@@ -1,6 +1,6 @@
 {
   "name": "file-patch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "command line diff / patch tool for https://github.com/google/diff-match-patch",
   "bin": {
     "file-diff": "./bin/file-diff.js",

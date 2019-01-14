@@ -1,12 +1,14 @@
 {
   "name": "file-patch",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "command line diff / patch tool for https://github.com/google/diff-match-patch",
   "bin": {
     "file-diff": "./bin/file-diff.js",
     "file-patch": "./bin/file-patch.js"
   },
   "scripts": {
+    "examples-diff": "node bin/file-diff examples/abc.txt examples/abc-mod.txt && node bin/file-diff examples/config.yml examples/config-mod.yml",
+    "examples-patch": "node bin/file-patch examples/abc.txt.diff examples/abc.txt && node bin/file-patch examples/config.yml.diff examples/config.yml",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

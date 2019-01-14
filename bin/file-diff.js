@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 'use strict'
 
-const fs = require('fs');
-const path = require("path");
 const DiffMatchPatch = require('diff-match-patch');
+
+const utils = require('./utils');
 
 const argv = process.argv;
 
@@ -13,9 +13,8 @@ if (argv.length < 4) {
   process.exit(1);
 }
 
-const encoding = 'utf-8';
-const text1 = fs.readFileSync(path.resolve(argv[2]), encoding);
-const text2 = fs.readFileSync(path.resolve(argv[3]), encoding);
+const text1 = utils.readText(argv[2]);
+const text2 = utils.readText(argv[3]);
 
 const dmp = new DiffMatchPatch();
 const diff = dmp.diff_main(text1, text2)
@@ -24,5 +23,5 @@ const text = dmp.patch_toText(patch)
 console.log('txt ', text)
 
 // save to .diff
-fs.writeFileSync(`${path.resolve(argv[2])}.diff`, text, encoding)
-console.log(`diff file is saved to ${path.resolve(argv[2])}.diff`)
+utils.writeText(argv[2], text)
+console.log(`diff file is saved to ${utils.getPath(argv[2])}.diff`)

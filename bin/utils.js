@@ -12,7 +12,7 @@ function readText(filePath) {
 }
 
 function writeText(filePath, text) {
-  fs.writeFileSync(`${path.resolve(filePath)}.diff`, text, ENCODING)
+  fs.writeFileSync(path.resolve(filePath), text, ENCODING)
 }
 
 exports = module.exports = {

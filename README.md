@@ -13,7 +13,7 @@ If you have modified some part of your dependent modules or libraries (modified 
 You can install it via npm
 
 ```
-npm install file-diff
+npm install file-patch
 ```
 
 ## Usage

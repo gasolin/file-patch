@@ -1,3 +1,7 @@
+# 0.3 (2019/02/10)
+
+- refactor file-patch/file-diff command to add the -h option
+
 # 0.2 (2019/01/14)
 
 - share utils between file-diff and file-patch command
